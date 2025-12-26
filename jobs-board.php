@@ -198,10 +198,10 @@
             <nav>
                 <a href="index.html" class="logo">MERL<span>360</span>.</a>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="jobs.html" class="active">Jobs Board</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#about">About Us</a></li>
+                    <li><a href="" class="active">Jobs Board</a></li>
+                    <li><a href="/#services">Services</a></li>
                     <li><a href="#" class="cta-header">Post a Job</a></li>
                 </ul>
             </nav>
