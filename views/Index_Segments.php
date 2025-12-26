@@ -478,7 +478,7 @@ HTML;
                     <p style="margin-bottom: 20px;">Fill out the form or contact us directly. We answer all inquiries within 24 hours.</p>
                     <p style="margin-bottom: 10px;"><strong>📍 Address:</strong><br>123 Impact Avenue, Abuja, Nigeria</p>
                     <p style="margin-bottom: 10px;"><strong>📞 Phone:</strong><br>+234 806 691 2073</p>
-                    <p style="margin-bottom: 10px;"><strong>✉️ Email:</strong><br>support@merl360.com</p>
+                    <p style="margin-bottom: 10px;"><strong>✉️ Email:</strong><br>admin@merl360.com</p>
                 </div>
                 <div class="contact-form">
                     <form>
@@ -492,7 +492,7 @@ HTML;
                         </div>
                         <div class="form-group">
                             <label>Email Address</label>
-                            <input type="email" placeholder="email@example.com">
+                            <input type="email" placeholder="admin@merl360.com">
                         </div>
                         <div class="form-group">
                             <label>How can we help?</label>
