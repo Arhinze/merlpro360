@@ -230,7 +230,7 @@
                 <button class="btn btn-primary">Filter Jobs</button>
             </div>
 
-            <label for="apply"><div class="job-card">
+            <a href = ""><div class="job-card">
                 <div class="job-info">
                     <h3>Senior M&E Officer</h3>
                     <div class="job-meta">
@@ -244,7 +244,7 @@
                     </div>
                 </div>
                 <a href="#" class="btn btn-primary" id="apply">Apply Now</a>
-            </div></label>
+            </div></a>
 
             <div class="job-card">
                 <div class="job-info">
