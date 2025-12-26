@@ -359,7 +359,7 @@ HTML;
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">Impact<span>Partners</span>.</a>
+                <a href="#" class="logo">MERL<span>360</span>.</a>
                 <ul class="nav-links">
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
@@ -474,7 +474,7 @@ HTML;
                 <div class="contact-info">
                     <h3 style="margin-bottom: 20px;">Contact Information</h3>
                     <p style="margin-bottom: 20px;">Fill out the form or contact us directly. We answer all inquiries within 24 hours.</p>
-                    <p style="margin-bottom: 10px;"><strong>📍 Address:</strong><br>123 Impact Avenue, Lagos, Nigeria</p>
+                    <p style="margin-bottom: 10px;"><strong>📍 Address:</strong><br>123 Impact Avenue, Abuja, Nigeria</p>
                     <p style="margin-bottom: 10px;"><strong>📞 Phone:</strong><br>+234 800 123 4567</p>
                     <p style="margin-bottom: 10px;"><strong>✉️ Email:</strong><br>hello@MERL360.com</p>
                 </div>
@@ -507,7 +507,7 @@ HTML;
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo" style="margin-bottom: 20px;">Impact<span>Partners</span>.</div>
+                    <div class="logo" style="margin-bottom: 20px;">MERL<span>360</span>.</div>
                     <p>Professional consultancy services dedicated to the growth and sustainability of the non-profit sector.</p>
                 </div>
                 <div class="footer-col">
