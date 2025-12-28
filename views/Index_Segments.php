@@ -42,6 +42,7 @@ HTML;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>MERLPro360 | NGO Consultancy</title>
     <style>
         /* --- RESET & VARIABLES --- */
@@ -413,6 +414,7 @@ HTML;
                     <div class="icon">📊</div>
                     <h3>Strategic Planning</h3>
                     <p>We help you define clear roadmaps, setting achievable goals and long-term vision that aligns with donor requirements.</p>
+                    <p><a href="#contact" class="get-a-quote">Get a quote <i class="la la-arrow-right"></i></a></p>
                 </div>
                 <div class="service-card">
                     <div class="icon">💰</div>
