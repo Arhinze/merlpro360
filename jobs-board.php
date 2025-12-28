@@ -198,22 +198,6 @@
         .copyright { text-align: center; border-top: 1px solid #333; padding-top: 20px; margin-top: 40px;}
 
         /* --- RESPONSIVE --- */
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .filter-bar { flex-direction: column; }
-            .job-card { flex-direction: column; align-items: flex-start; gap: 20px; }
-            .job-card .btn { width: 100%; text-align: center; }
-            .job-meta { flex-direction: column; gap: 5px; }
-        }
-
-        .get-a-quote-div {
-            margin-top:15px
-        }
-
-        .get-a-quote-link {
-            color: var(--primary);
-            font-weight:bold;
-        }
 
         /* --- MOBILE RESPONSIVENESS (UPDATED) --- */
         @media (max-width: 768px) {
@@ -259,6 +243,22 @@
             .about-grid { grid-template-columns: 1fr; }
             .stats-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
             .contact-container { flex-direction: column; }
+
+            /* For jobs-board page */
+            .filter-bar { flex-direction: column; }
+            .job-card { flex-direction: column; align-items: flex-start; gap: 20px; }
+            .job-card .btn { width: 100%; text-align: center; }
+            .job-meta { flex-direction: column; gap: 5px; }
+
+            /* Get a quote */
+            .get-a-quote-div {
+                margin-top:15px
+            }
+    
+            .get-a-quote-link {
+                color: var(--primary);
+                font-weight:bold;
+            }
         }
     </style>
 </head>
