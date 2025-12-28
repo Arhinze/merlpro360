@@ -43,11 +43,11 @@ HTML;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <title>MERLPro360 | NGO Consultancy</title>
+    <title>MERLPRO360 | NGO Consultancy</title>
     <style>
         /* --- RESET & VARIABLES --- */
         :root {
-            --primary: #005f73; /* Professional Teal - MERLPro focus */
+            --primary: #005f73; /* Professional Teal - MERLPRO focus */
             --secondary: #0a9396; /* Lighter Teal */
             --accent: #ee9b00; /* Energetic Coral/Gold */
             --dark: #1b263b;
@@ -370,7 +370,7 @@ HTML;
     <header>
         <div class="container">
             <nav>
-                <a href="/" class="logo">MERLPro<span>360</span>.</a>
+                <a href="/" class="logo">MERLPRO<span>360</span>.</a>
                 <ul class="nav-links">
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
@@ -385,7 +385,7 @@ HTML;
     <section class="hero">
         <div class="container hero-content">
             <h1>Empowering NGOs with<br>Data-Driven Insights.</h1>
-            <p><strong>MERLPro360</strong> bridges the gap between donor expectations and on-the-ground reality through superior Monitoring, Evaluation, Research, and Learning.</p>
+            <p><strong>MERLPRO360</strong> bridges the gap between donor expectations and on-the-ground reality through superior Monitoring, Evaluation, Research, and Learning.</p>
             <a href="#contact" class="btn btn-primary">Start a Project</a>
             <a href="#services" class="btn btn-outline">Explore Services</a>
         </div>
@@ -400,7 +400,7 @@ HTML;
                 <div class="about-text">
                     <h5 style="color: var(--accent); font-weight: 700; text-transform: uppercase; margin-bottom: 10px;">Who We Are</h5>
                     <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; line-height: 1.2;">We help non-profits navigate complex challenges.</h2>
-                    <p style="margin-bottom: 20px;">At <strong>MERLPro360</strong>, we believe that good intentions need great strategy. We provide the operational expertise, fundraising strategies, and monitoring frameworks that allow NGOs to focus on what they do best: changing lives.</p>
+                    <p style="margin-bottom: 20px;">At <strong>MERLPRO360</strong>, we believe that good intentions need great strategy. We provide the operational expertise, fundraising strategies, and monitoring frameworks that allow NGOs to focus on what they do best: changing lives.</p>
                     <ul style="margin-bottom: 30px;">
                         <li style="margin-bottom: 10px;">✓ <strong>10+ Years</strong> of Sector Experience</li>
                         <li style="margin-bottom: 10px;">✓ <strong>Data-Driven</strong> Monitoring & Evaluation</li>
@@ -531,7 +531,7 @@ HTML;
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo" style="margin-bottom: 20px;">MERLPro<span>360</span>.</div>
+                    <div class="logo" style="margin-bottom: 20px;">MERLPRO<span>360</span>.</div>
                     <p>Professional consultancy services dedicated to the growth and sustainability of the non-profit sector.</p>
                 </div>
                 <div class="footer-col">
@@ -553,7 +553,7 @@ HTML;
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 MERLPro360 Consultancy. All Rights Reserved.</p>
+                <p>&copy; 2025 MERLPRO360 Consultancy. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
