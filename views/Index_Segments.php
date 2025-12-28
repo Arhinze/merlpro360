@@ -6,7 +6,7 @@ include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
 include_once($_SERVER["DOCUMENT_ROOT"]."/views/Mail.php");
 
 if(isset($_POST["quote"])) {
-    $mail_admin = $cm->send_quick_mail("admin@$site_url_short", "You just received a quote from $site_name", $admin_quote_sent_message);
+    $mail_admin = $cm->send_quick_mail("support@$site_url_short", "You just received a quote from $site_name", $admin_quote_sent_message);
     check_mail_status($mail_admin);
     $mail->clearAddresses();
 }

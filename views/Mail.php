@@ -106,9 +106,9 @@ function check_mail_status($mail_xyz) {
         //echo "<br /><br /><br /><br /> <span style='color:green'> <br /> <b> Mail sent successfully </b><br /> </span>";
 
         echo <<<HTML
-            <div style="display:block;padding:15px;background-color:#6c757d;color:#fff;border:1px solid #fff;border-radius:6px">
+            <div style="display:block;position:fixed;padding:15px;background-color:#6c757d;color:#fff;border:1px solid #fff;border-radius:6px;width:70%;top:15%;left:12%">
                 <div style="text-align:right"><i class="la la-times"></i></div>
-                <div style="display:block;position:fixed;text-align:center">Message Sent <i class="la la-check"></i>
+                <div style="text-align:center">Message Sent <i class="la la-check"></i>
             </div>
 HTML;
     }
