@@ -43,11 +43,12 @@ HTML;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <title>MERLPRO360 | NGO Consultancy</title>
+    <title>MERL PRO 360 | NGO Consultancy</title>
+
     <style>
         /* --- RESET & VARIABLES --- */
         :root {
-            --primary: #005f73; /* Professional Teal - MERLPRO focus */
+            --primary: #005f73; /* Professional Teal */
             --secondary: #0a9396; /* Lighter Teal */
             --accent: #ee9b00; /* Energetic Coral/Gold */
             --dark: #1b263b;
@@ -69,6 +70,7 @@ HTML;
             line-height: 1.6;
             color: var(--dark);
             background-color: var(--white);
+            overflow-x: hidden; /* Prevents side scrolling */
         }
 
         a { text-decoration: none; color: inherit; }
@@ -141,7 +143,7 @@ HTML;
             font-weight:bold;
         }
 
-        /* --- HEADER --- */
+        /* --- HEADER & NAVIGATION --- */
         header {
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -156,20 +158,22 @@ HTML;
             justify-content: space-between;
             align-items: center;
             height: 80px;
+            position: relative;
         }
 
         .logo {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 800;
             color: var(--primary);
             display: flex;
             align-items: center;
-            letter-spacing: -1px;
+            letter-spacing: -0.5px;
+            z-index: 1001; /* Keeps logo above mobile menu */
         }
 
         .logo span { color: var(--accent); }
 
-        .nav-links { display: flex; gap: 30px; }
+        .nav-links { display: flex; gap: 30px; align-items: center; }
 
         .nav-links a {
             font-weight: 500;
@@ -188,6 +192,22 @@ HTML;
         }
 
         .cta-header:hover { background: var(--secondary); }
+
+        /* --- HAMBURGER MENU STYLES --- */
+        .hamburger {
+            display: none; /* Hidden on desktop */
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            transition: var(--transition);
+            background-color: var(--dark);
+        }
 
         /* --- HERO SECTION --- */
         .hero {
@@ -226,22 +246,13 @@ HTML;
             align-items: center;
         }
 
-        .about-img {
-            position: relative;
-        }
-
-        .about-img img {
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-        }
-
+        .about-img { position: relative; }
+        .about-img img { border-radius: 10px; box-shadow: var(--shadow); }
         .about-img::before {
             content: '';
             position: absolute;
-            top: -20px;
-            left: -20px;
-            width: 100px;
-            height: 100px;
+            top: -20px; left: -20px;
+            width: 100px; height: 100px;
             background: var(--accent);
             z-index: -1;
             border-radius: 10px;
@@ -249,13 +260,11 @@ HTML;
 
         /* --- SERVICES CARDS --- */
         .services { background-color: var(--light); }
-
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-
         .service-card {
             background: var(--white);
             padding: 40px;
@@ -264,39 +273,17 @@ HTML;
             transition: var(--transition);
             border-bottom: 4px solid transparent;
         }
-
         .service-card:hover {
             transform: translateY(-10px);
             border-bottom: 4px solid var(--accent);
         }
-
-        .icon {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
-
+        .icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; }
         .service-card h3 { margin-bottom: 15px; color: var(--dark); }
 
         /* --- IMPACT STATS --- */
-        .impact {
-            background: var(--primary);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .stat-item h3 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--accent);
-            margin-bottom: 10px;
-        }
+        .impact { background: var(--primary); color: var(--white); text-align: center; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .stat-item h3 { font-size: 3rem; font-weight: 700; color: var(--accent); margin-bottom: 10px; }
 
         /* --- CONTACT --- */
         .contact-container {
@@ -306,59 +293,63 @@ HTML;
             border-radius: 10px;
             overflow: hidden;
         }
-
-        .contact-info {
-            background: var(--primary);
-            color: var(--white);
-            padding: 50px;
-            flex: 1;
-        }
-
-        .contact-form {
-            padding: 50px;
-            flex: 1.5;
-        }
-
+        .contact-info { background: var(--primary); color: var(--white); padding: 50px; flex: 1; }
+        .contact-form { padding: 50px; flex: 1.5; }
         .form-group { margin-bottom: 20px; }
-        
         .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
-        
         .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background: var(--light);
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; background: var(--light);
         }
 
         /* --- FOOTER --- */
-        footer {
-            background: var(--dark);
-            color: #aaa;
-            padding: 60px 0 20px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
+        footer { background: var(--dark); color: #aaa; padding: 60px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; }
         .footer-col h4 { color: var(--white); margin-bottom: 20px; }
         .footer-col ul li { margin-bottom: 10px; }
         .footer-col ul li a:hover { color: var(--accent); }
+        .copyright { text-align: center; border-top: 1px solid #333; padding-top: 20px; }
 
-        .copyright {
-            text-align: center;
-            border-top: 1px solid #333;
-            padding-top: 20px;
-        }
-
-        /* --- MOBILE RESPONSIVENESS --- */
+        /* --- MOBILE RESPONSIVENESS (UPDATED) --- */
         @media (max-width: 768px) {
-            .nav-links { display: none; } /* Simplified for template */
-            .hero-content h1 { font-size: 2.5rem; }
+            .hamburger {
+                display: block; /* Show hamburger icon */
+            }
+
+            .hamburger.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+            .nav-links {
+                position: fixed;
+                left: -100%;
+                top: 80px; /* Below header */
+                gap: 0;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+                padding: 20px 0;
+            }
+
+            .nav-links.active {
+                left: 0; /* Slide in */
+            }
+
+            .nav-links li {
+                margin: 16px 0;
+            }
+
+            .cta-header {
+                display: inline-block; /* Fix button layout on mobile */
+            }
+
+            /* Adjust Hero Text for Mobile */
+            .hero-content h1 { font-size: 2.2rem; }
+            .hero-content p { font-size: 1rem; padding: 0 10px; }
+            
+            /* Stack grids */
             .about-grid { grid-template-columns: 1fr; }
             .stats-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
             .contact-container { flex-direction: column; }
@@ -370,7 +361,14 @@ HTML;
     <header>
         <div class="container">
             <nav>
-                <a href="/" class="logo">MERLPRO<span>360</span>.</a>
+                <a href="/" class="logo">MERL PRO <span>360</span>.</a>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
                 <ul class="nav-links">
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
@@ -385,7 +383,7 @@ HTML;
     <section class="hero">
         <div class="container hero-content">
             <h1>Empowering NGOs with<br>Data-Driven Insights.</h1>
-            <p><strong>MERLPRO360</strong> bridges the gap between donor expectations and on-the-ground reality through superior Monitoring, Evaluation, Research, and Learning.</p>
+            <p><strong>MERL PRO 360</strong> bridges the gap between donor expectations and on-the-ground reality through superior Monitoring, Evaluation, Research, and Learning.</p>
             <a href="#contact" class="btn btn-primary">Start a Project</a>
             <a href="#services" class="btn btn-outline">Explore Services</a>
         </div>
@@ -400,7 +398,7 @@ HTML;
                 <div class="about-text">
                     <h5 style="color: var(--accent); font-weight: 700; text-transform: uppercase; margin-bottom: 10px;">Who We Are</h5>
                     <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; line-height: 1.2;">We help non-profits navigate complex challenges.</h2>
-                    <p style="margin-bottom: 20px;">At <strong>MERLPRO360</strong>, we believe that good intentions need great strategy. We provide the operational expertise, fundraising strategies, and monitoring frameworks that allow NGOs to focus on what they do best: changing lives.</p>
+                    <p style="margin-bottom: 20px;">At <strong>MERL PRO 360</strong>, we believe that good intentions need great strategy. We provide the operational expertise, fundraising strategies, and monitoring frameworks that allow NGOs to focus on what they do best: changing lives.</p>
                     <ul style="margin-bottom: 30px;">
                         <li style="margin-bottom: 10px;">✓ <strong>10+ Years</strong> of Sector Experience</li>
                         <li style="margin-bottom: 10px;">✓ <strong>Data-Driven</strong> Monitoring & Evaluation</li>
@@ -531,7 +529,7 @@ HTML;
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo" style="margin-bottom: 20px;">MERLPRO<span>360</span>.</div>
+                    <div class="logo" style="margin-bottom: 20px;">MERL PRO <span>360</span>.</div>
                     <p>Professional consultancy services dedicated to the growth and sustainability of the non-profit sector.</p>
                 </div>
                 <div class="footer-col">
@@ -553,11 +551,30 @@ HTML;
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 MERLPRO360 Consultancy. All Rights Reserved.</p>
+                <p>&copy; 2025 MERL PRO 360 Consultancy. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-link");
+
+        // Toggle menu on click
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        });
+
+        // Close menu when a link is clicked
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            })
+        })
+    </script>
 </body>
 </html>
 HTML;
@@ -565,6 +582,7 @@ HTML;
                                                                 
        public static function index_scripts(){
         echo <<<HTML
+
                                                                 
 HTML;
         }
