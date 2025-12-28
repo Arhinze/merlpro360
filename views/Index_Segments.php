@@ -514,7 +514,7 @@ HTML;
                         </div>
                         <div class="form-group">
                             <label>Email Address</label>
-                            <input type="email" placeholder="admin@MERLPro360.com">
+                            <input type="email" placeholder="admin@merlpro360.com">
                         </div>
                         <div class="form-group">
                             <label>How can we help?</label>
