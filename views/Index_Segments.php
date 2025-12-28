@@ -361,7 +361,7 @@ HTML;
     <header>
         <div class="container">
             <nav>
-                <a href="/" class="logo">MERL PRO <span>360</span>.</a>
+                <a href="/" class="logo">MERL PRO <span> 360</span>.</a>
 
                 <div class="hamburger">
                     <span class="bar"></span>
