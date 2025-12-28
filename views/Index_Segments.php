@@ -9,6 +9,13 @@ if(isset($_POST["quote"])) {
     $mail_admin = $cm->send_quick_mail("support@$site_url_short", "You just received a quote from $site_name", $admin_quote_sent_message);
     check_mail_status($mail_admin);
     $mail->clearAddresses();
+
+    echo <<<HTML
+        <div style="display:block;position:fixed;padding:15px;background-color:#0a9396;color:#fff;border:1px solid #fff;border-radius:9px;box-shadow:3px 3px 3px 0 #888;width:45%;height:15%;top:15%;left:15%;z-index:9">
+            <div style="text-align:right"><i class="la la-times"></i></div>
+            <div style="text-align:center">Message Sent <i class="la la-check"></i>
+        </div>
+HTML;
 }
 
 class Index_Segments{

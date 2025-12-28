@@ -104,12 +104,5 @@ function check_mail_status($mail_xyz) {
     } else {//$err_msg = error_get_last()["message"];
         //$mail_xyz->clearAddresses();
         //echo "<br /><br /><br /><br /> <span style='color:green'> <br /> <b> Mail sent successfully </b><br /> </span>";
-
-        echo <<<HTML
-            <div style="display:block;position:fixed;padding:15px;background-color:#0a9396;color:#fff;border:1px solid #fff;border-radius:9px;box-shadow:3px 3px 3px 0 #888;width:45%;height:15%;top:15%;left:15%;z-index:9">
-                <div style="text-align:right"><i class="la la-times"></i></div>
-                <div style="text-align:center">Message Sent <i class="la la-check"></i>
-            </div>
-HTML;
     }
 }
