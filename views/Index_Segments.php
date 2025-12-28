@@ -498,9 +498,9 @@ HTML;
                 <div class="contact-info">
                     <h3 style="margin-bottom: 20px;">Contact Information</h3>
                     <p style="margin-bottom: 20px;">Fill out the form or contact us directly. We answer all inquiries within 24 hours.</p>
-                    <p style="margin-bottom: 10px;"><strong>📍 Address:</strong><br>123 Impact Avenue, Abuja, Nigeria</p>
+                    <p style="margin-bottom: 10px;"><strong>📍 Address:</strong><br>House BO6, Lenzo Pacific, Pyakassa, Airport Road, Abuja, FCT, Nigeria.</p>
                     <p style="margin-bottom: 10px;"><strong>📞 Phone:</strong><br>+234 806 691 2073</p>
-                    <p style="margin-bottom: 10px;"><strong>✉️ Email:</strong><br>admin@MERLPro360.com</p>
+                    <p style="margin-bottom: 10px;"><strong>✉️ Email:</strong><br><a href="mailto:admin@merlpro360.com">admin@merlpro360.com</a></p>
                 </div>
                 <div class="contact-form">
                     <form>
