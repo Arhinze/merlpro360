@@ -276,11 +276,11 @@
                 </div>
 
                 <ul class="nav-links">
-                    <li><a href="/">Home</a></li>
                     <li><a href="/#about">About Us</a></li>
-                    <li><a href="" class="active">Jobs Board</a></li>
                     <li><a href="/#services">Services</a></li>
-                    <li><a href="#" class="cta-header">Post a Job</a></li>
+                    <li><a href="/#impact">Our Impact</a></li>
+                    <li><a href="/jobs-board">Jobs Board</a></li>
+                    <li><a href="/#contact" class="cta-header">Post a Job</a></li>
                 </ul>
             </nav>
         </div>
