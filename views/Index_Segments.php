@@ -3,7 +3,13 @@ ini_set("display_errors", '1'); //for testing purposes..
 
 include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php");
 include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."/views/Mail.php");
 
+if(isset($_POST["quote"])) {
+    $mail_admin = $cm->send_quick_mail("admin@$site_url_short", "You just received a quote from $site_name", $admin_quote_sent_message);
+    check_mail_status($mail_admin);
+    $mail->clearAddresses();
+}
 
 class Index_Segments{
     public static function inject($obj) {
@@ -500,23 +506,24 @@ HTML;
                     <p style="margin-bottom: 10px;"><strong>✉️ Email:</strong><br><a href="mailto:admin@merlpro360.com">admin@merlpro360.com</a></p>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form method="post" action="/#contact">
                         <div class="form-group">
                             <label>Full Name</label>
-                            <input type="text" placeholder="Your Name">
+                            <input type="text" name="name" placeholder="Your Name">
                         </div>
                         <div class="form-group">
                             <label>Organization Name</label>
-                            <input type="text" placeholder="NGO / Company Name">
+                            <input type="text" name="Organization" placeholder="NGO / Company Name">
                         </div>
                         <div class="form-group">
                             <label>Email Address</label>
-                            <input type="email" placeholder="admin@merlpro360.com">
+                            <input type="email" name="email" placeholder="abc@example.com">
                         </div>
                         <div class="form-group">
                             <label>How can we help?</label>
-                            <textarea rows="4" placeholder="Briefly describe your needs..."></textarea>
+                            <textarea rows="4" name="message" placeholder="Briefly describe your needs..."></textarea>
                         </div>
+                        <input type="hidden" name="quote" value="quote_sent"/>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
