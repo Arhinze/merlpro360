@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit61b8ba1635237e02b2815c484edfa116
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
         'F' => 
         array (
             'Facebook\\' => 9,
@@ -14,6 +18,10 @@ class ComposerStaticInit61b8ba1635237e02b2815c484edfa116
     );
 
     public static $prefixDirsPsr4 = array (
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
         'Facebook\\' => 
         array (
             0 => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook',
