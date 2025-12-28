@@ -1,6 +1,6 @@
 <?php
 
-$site_name = "MERLPro360";
+$site_name = "MERL PRO 360";
 $site_url="https://merlpro360.com";
 $site_url_short="merlpro360.com";
 
