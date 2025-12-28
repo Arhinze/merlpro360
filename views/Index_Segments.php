@@ -132,6 +132,15 @@ HTML;
             color: var(--grey);
         }
 
+        .get-a-quote-div {
+            margin-top:15px
+        }
+
+        .get-a-quote-link {
+            color: var(--primary);
+            font-weight:bold;
+        }
+
         /* --- HEADER --- */
         header {
             background: var(--white);
@@ -414,33 +423,43 @@ HTML;
                     <div class="icon">📊</div>
                     <h3>Strategic Planning</h3>
                     <p>We help you define clear roadmaps, setting achievable goals and long-term vision that aligns with donor requirements.</p>
-                    <p><a href="#contact" class="get-a-quote">Get a quote <i class="la la-arrow-right"></i></a></p>
+
+                    <p class="get-a-quote-div"><a href="#contact" class="get-a-quote-link">Get a quote <i class="la la-arrow-right"></i></a></p>
                 </div>
                 <div class="service-card">
                     <div class="icon">💰</div>
                     <h3>Fundraising Strategy</h3>
                     <p>Diversify your income streams with our expert grant writing, donor mapping, and corporate partnership strategies.</p>
-                    <p><a href="#contact" class="get-a-quote">Get a quote <i class="la la-arrow-right"></i></a></p>
+
+                    <p class="get-a-quote-div"><a href="#contact" class="get-a-quote-link">Get a quote <i class="la la-arrow-right"></i></a></p>
                 </div>
                 <div class="service-card">
                     <div class="icon">📈</div>
                     <h3>Monitoring & Evaluation</h3>
                     <p>Prove your impact. We set up robust M&E frameworks to track data, measure success, and report to stakeholders.</p>
+
+                    <p class="get-a-quote-div"><a href="#contact" class="get-a-quote-link">Get a quote <i class="la la-arrow-right"></i></a></p>
                 </div>
                 <div class="service-card">
                     <div class="icon">⚖️</div>
                     <h3>Governance & Compliance</h3>
                     <p>Ensure your NGO meets all legal standards and best practices for board governance and financial transparency.</p>
+
+                    <p class="get-a-quote-div"><a href="#contact" class="get-a-quote-link">Get a quote <i class="la la-arrow-right"></i></a></p>
                 </div>
                 <div class="service-card">
                     <div class="icon">🤝</div>
                     <h3>Capacity Building</h3>
                     <p>Training workshops for your staff and volunteers to enhance operational efficiency and leadership skills.</p>
+
+                    <p class="get-a-quote-div"><a href="#contact" class="get-a-quote-link">Get a quote <i class="la la-arrow-right"></i></a></p>
                 </div>
                 <div class="service-card">
                     <div class="icon">📢</div>
                     <h3>Advocacy & Comms</h3>
                     <p>Amplify your voice. We craft compelling narratives and advocacy campaigns that drive policy change.</p>
+
+                    <p class="get-a-quote-div"><a href="#contact" class="get-a-quote-link">Get a quote <i class="la la-arrow-right"></i></a></p>
                 </div>
             </div>
         </div>
