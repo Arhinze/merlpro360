@@ -384,8 +384,8 @@ HTML;
         <div class="container hero-content">
             <h1>Empowering NGOs with<br>Data-Driven Insights.</h1>
             <p><strong>MERL PRO 360</strong> bridges the gap between donor expectations and on-the-ground reality through superior Monitoring, Evaluation, Research, and Learning.</p>
-            <a href="#contact" class="btn btn-primary">Start a Project</a>
-            <a href="#services" class="btn btn-outline">Explore Services</a>
+            <p><a href="#contact" class="btn btn-primary">Start a Project</a></p>
+            <p><a href="#services" class="btn btn-outline">Explore Services</a></p>
         </div>
     </section>
 
