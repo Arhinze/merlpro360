@@ -361,7 +361,7 @@ HTML;
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">MERLPro<span>360</span>.</a>
+                <a href="/" class="logo">MERLPro<span>360</span>.</a>
                 <ul class="nav-links">
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
