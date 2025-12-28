@@ -420,6 +420,7 @@ HTML;
                     <div class="icon">💰</div>
                     <h3>Fundraising Strategy</h3>
                     <p>Diversify your income streams with our expert grant writing, donor mapping, and corporate partnership strategies.</p>
+                    <p><a href="#contact" class="get-a-quote">Get a quote <i class="la la-arrow-right"></i></a></p>
                 </div>
                 <div class="service-card">
                     <div class="icon">📈</div>
