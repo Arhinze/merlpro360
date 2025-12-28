@@ -513,7 +513,7 @@ HTML;
                         </div>
                         <div class="form-group">
                             <label>Organization Name</label>
-                            <input type="text" name="Organization" placeholder="NGO / Company Name">
+                            <input type="text" name="Organisation" placeholder="NGO / Company Name">
                         </div>
                         <div class="form-group">
                             <label>Email Address</label>

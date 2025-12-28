@@ -85,7 +85,7 @@ $admin_quote_sent_message = <<<HTML
         <p><b>Name:</b> $name.</p>
         <p><b>Organisation:</b> $organisation.</p>
         <p><b>Email:</b> $email.</p>
-        <p><b>Message:</b><br /> $email.</p>
+        <p><b>Message:</b><br /> $message.</p>
     $mail_body_bottom
 HTML;
 
