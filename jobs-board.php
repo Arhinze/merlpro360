@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobs | MERL360</title>
+    <title>Jobs | MERLPro360</title>
     <style>
         /* --- REUSING CORE STYLES FROM MAIN PAGE --- */
         :root {
@@ -196,7 +196,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo">MERL<span>360</span>.</a>
+                <a href="index.html" class="logo">MERLPro<span>360</span>.</a>
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
                     <li><a href="/#about">About Us</a></li>
@@ -395,10 +395,10 @@
 
     <footer>
         <div class="container">
-            <div class="logo" style="margin-bottom: 20px;">MERL<span>360</span>.</div>
+            <div class="logo" style="margin-bottom: 20px;">MERLPro<span>360</span>.</div>
             <p>Connecting development professionals with impact-driven opportunities.</p>
             <div class="copyright">
-                <p>&copy; 2024 MERL360 Consultancy. All Rights Reserved.</p>
+                <p>&copy; 2024 MERLPro360 Consultancy. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
