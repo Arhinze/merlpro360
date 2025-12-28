@@ -150,7 +150,7 @@ HTML;
         }
 
         /* --- HEADER & NAVIGATION --- */
-        header {
+        header0 {
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             position: fixed;
