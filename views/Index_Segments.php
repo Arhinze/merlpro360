@@ -511,6 +511,11 @@ HTML;
                     <p style="margin-bottom: 20px;">Fill out the form or contact us directly. We answer all inquiries within 24 hours.</p>
                     <p style="margin-bottom: 10px;"><strong>📍 Address:</strong><br>House BO6, Lenzo Pacific, Pyakassa, Airport Road, Abuja, FCT, Nigeria.</p>
                     <p style="margin-bottom: 10px;"><strong>✉️ Email:</strong><br><a href="mailto:admin@merlpro360.com">admin@merlpro360.com</a></p>
+                    <p style="margin-bottom: 10px;"><strong>Social Media:</strong><br></p>
+                    <p><a href=""><i class="la la-instagram"></i> @merlpro360</a></p>
+                    <p><a href=""><i class="la la-facebook"></i> @merlpro360</a></p>
+                    <p><a href=""><i class="la la-x"></i> @merlpro360</a></p>
+                    <p><a href=""><i class="la la-tiktok"></i> @merlpro360</a></p>
                 </div>
                 <div class="contact-form">
                     <form method="post" action="/#contact">
@@ -560,6 +565,15 @@ HTML;
                         <li><a href="#">Fundraising</a></li>
                         <li><a href="#">M&E Frameworks</a></li>
                         <li><a href="#">Strategic Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social Media Pages</h4>
+                    <ul>
+                        <li><a href=""><i class="la la-instagram"></i> @merlpro360</a></li>
+                        <li><a href=""><i class="la la-facebook"></i> @merlpro360</a></li>
+                        <li><a href=""><i class="la la-x"></i> @merlpro360</a></li>
+                        <li><a href=""><i class="la la-tiktok"></i> @merlpro360</a></li>
                     </ul>
                 </div>
             </div>
