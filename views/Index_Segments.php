@@ -572,8 +572,8 @@ HTML;
                     <ul>
                         <li><a href=""><i class="la la-instagram"></i> @merlpro360</a></li>
                         <li><a href=""><i class="la la-facebook"></i> @merlpro360</a></li>
-                        <li><a href=""><img src="/static/images/x-icon.png"/> @merlpro360</a></li>
-                        <li><a href=""><img src="/static/images/tiktok-icon.png"/> @merlpro360</a></li>
+                        <li><a href=""><img src="/static/images/x-icon.png" style="color:#fff"/> @merlpro360</a></li>
+                        <li><a href=""><img src="/static/images/tiktok-icon.png" style="color:#fff"/> @merlpro360</a></li>
                     </ul>
                 </div>
             </div>
