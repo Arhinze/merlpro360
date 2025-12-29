@@ -514,7 +514,7 @@ HTML;
                     <p style="margin-bottom: 10px;"><strong>Social Media:</strong><br></p>
                     <p><a href=""><i class="la la-instagram"></i> @merlpro360</a></p>
                     <p><a href=""><i class="la la-facebook"></i> @merlpro360</a></p>
-                    <p><a href=""><img src="/static/images/x-icon.png"/> @merlpro360</a></p>
+                    <p><a href=""><img src="/static/images/x-icon1.png"/> @merlpro360</a></p>
                     <p><a href=""><img src="/static/images/tiktok-icon.png"/> @merlpro360</a></p>
                 </div>
                 <div class="contact-form">
