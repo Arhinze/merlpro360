@@ -55,7 +55,7 @@ HTML;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>MERL PRO 360 | NGO Consultancy</title>
 
@@ -515,7 +515,7 @@ HTML;
                     <p style="margin-bottom: 10px;"><strong>Social Media:</strong><br></p>
                     <p><a href=""><i class="la la-instagram"></i> @merlpro360</a></p>
                     <p><a href=""><i class="la la-facebook"></i> @merlpro360</a></p>
-                    <p><a href=""><i class="fa fa-twitter"></i> @merlpro360</a></p>
+                    <p><a href=""><i class="fa-brands fa-x-twitter"></i> @merlpro360</a></p>
                     <p><a href=""><i class="fab fa-tiktok"></i> @merlpro360</a></p>
                 </div>
                 <div class="contact-form">
@@ -573,8 +573,8 @@ HTML;
                     <ul>
                         <li><a href=""><i class="la la-instagram"></i> @merlpro360</a></li>
                         <li><a href=""><i class="la la-facebook"></i> @merlpro360</a></li>
-                        <li><a href=""><img src="/static/images/x-icon.png" style="color:#fff"/> @merlpro360</a></li>
-                        <li><a href=""><img src="/static/images/tiktok-icon.png" style="color:#fff"/> @merlpro360</a></li>
+                        <li><a href=""><i class="fa-brands fa-x-twitter"></i> @merlpro360</a></li>
+                        <li><a href=""><i class="fab fa-tiktok"></i> @merlpro360</a></li>
                     </ul>
                 </div>
             </div>
