@@ -45,7 +45,7 @@ class Index_Segments{
     <header>
         <div class="container">
             <nav>
-                <a href="/" class="logo">MERL PRO <span> 360</span>.</a>
+                <a href="/" class="logo">MERL PRO &nbsp;<span>360</span>.</a>
 
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -233,7 +233,7 @@ HTML;
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo" style="margin-bottom: 20px;">MERL PRO <span>360</span>.</div>
+                    <div class="logo" style="margin-bottom: 20px;">MERL PRO &nbsp;<span>360</span>.</div>
                     <p>Professional consultancy services dedicated to the growth and sustainability of the non-profit sector.</p>
                 </div>
                 <div class="footer-col">
