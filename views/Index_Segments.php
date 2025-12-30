@@ -23,355 +23,25 @@ class Index_Segments{
         Index_Segments::$pdo = $obj;
     }
     protected static $pdo;
-
-    public static function main_header($site_name = SITE_NAME_SHORT) {
-        return <<<HTML
-         
-HTML;
-    }
-
-    public static function site_menu(){
-        return <<<HTML
-            
-HTML;
-    }
-    
-    public static function header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $Hi_user = "", $title=SITE_NAME){
-        $main_header = Index_Segments::main_header();
+ 
+    public static function header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $title=SITE_NAME){
+        
         $css_version = filemtime($_SERVER["DOCUMENT_ROOT"]."/static/style.css");
 
         echo <<<HTML
 
-HTML;
-       }
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="/static/style.css?$css_version"/>
+        <title>MERL PRO 360 | NGO Consultancy</title>
+    </head>
 
-        public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL){
-            $site_name_uc = strtoupper($site_name);    
-            $site_menu = Index_Segments::site_menu();
-       
-                echo <<<HTML
-                   <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <title>MERL PRO 360 | NGO Consultancy</title>
-
-    <style>
-        /* --- RESET & VARIABLES --- */
-        :root {
-            --primary: #005f73; /* Professional Teal */
-            --secondary: #0a9396; /* Lighter Teal */
-            --accent: #ee9b00; /* Energetic Coral/Gold */
-            --dark: #1b263b;
-            --light: #f8f9fa;
-            --white: #ffffff;
-            --grey: #6c757d;
-            --shadow: 0 4px 15px rgba(0,0,0,0.1);
-            --transition: all 0.3s ease;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: var(--white);
-            overflow-x: hidden; /* Prevents side scrolling */
-        }
-
-        a { text-decoration: none; color: inherit; }
-        ul { list-style: none; }
-        img { max-width: 100%; display: block; }
-
-        /* --- UTILITIES --- */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: var(--transition);
-            cursor: pointer;
-            border: none;
-        }
-
-        .btn-primary {
-            background-color: var(--accent);
-            color: var(--white);
-        }
-
-        .btn-primary:hover {
-            background-color: #ca8200;
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            border: 2px solid var(--white);
-            color: var(--white);
-            margin-left: 10px;
-        }
-
-        .btn-outline:hover {
-            background-color: var(--white);
-            color: var(--primary);
-        }
-
-        .section-padding { padding: 80px 0; }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-
-        .section-title p {
-            max-width: 600px;
-            margin: 0 auto;
-            color: var(--grey);
-        }
-
-        .get-a-quote-div {
-            margin-top:15px
-        }
-
-        .get-a-quote-link {
-            color: var(--primary);
-            font-weight:bold;
-        }
-
-        /* --- HEADER & NAVIGATION --- */
-        header {
-            background: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 80px;
-            position: relative;
-        }
-
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-            letter-spacing: -0.5px;
-            z-index: 1001; /* Keeps logo above mobile menu */
-        }
-
-        .logo span { color: var(--accent); }
-
-        .nav-links { display: flex; gap: 30px; align-items: center; }
-
-        .nav-links a {
-            font-weight: 500;
-            font-size: 0.95rem;
-            color: var(--dark);
-            transition: var(--transition);
-        }
-
-        .nav-links a:hover { color: var(--accent); }
-
-        .cta-header {
-            padding: 8px 20px;
-            background: var(--primary);
-            color: var(--white) !important;
-            border-radius: 4px;
-        }
-
-        .cta-header:hover { background: var(--secondary); }
-
-        /* --- HAMBURGER MENU STYLES --- */
-        .hamburger {
-            display: none; /* Hidden on desktop */
-            cursor: pointer;
-            z-index: 1001;
-        }
-
-        .bar {
-            display: block;
-            width: 25px;
-            height: 3px;
-            margin: 5px auto;
-            transition: var(--transition);
-            background-color: var(--dark);
-        }
-
-        /* --- HERO SECTION --- */
-        .hero {
-            background: linear-gradient(rgba(0, 95, 115, 0.9), rgba(0, 95, 115, 0.7)), url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: var(--white);
-            margin-top: 80px;
-        }
-
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-weight: 800;
-            line-height: 1.2;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            opacity: 0.9;
-        }
-
-        /* --- ABOUT SECTION --- */
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .about-img { position: relative; }
-        .about-img img { border-radius: 10px; box-shadow: var(--shadow); }
-        .about-img::before {
-            content: '';
-            position: absolute;
-            top: -20px; left: -20px;
-            width: 100px; height: 100px;
-            background: var(--accent);
-            z-index: -1;
-            border-radius: 10px;
-        }
-
-        /* --- SERVICES CARDS --- */
-        .services { background-color: var(--light); }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .service-card {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border-bottom: 4px solid transparent;
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-            border-bottom: 4px solid var(--accent);
-        }
-        .icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; }
-        .service-card h3 { margin-bottom: 15px; color: var(--dark); }
-
-        /* --- IMPACT STATS --- */
-        .impact { background: var(--primary); color: var(--white); text-align: center; }
-        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-        .stat-item h3 { font-size: 3rem; font-weight: 700; color: var(--accent); margin-bottom: 10px; }
-
-        /* --- CONTACT --- */
-        .contact-container {
-            display: flex;
-            background: var(--white);
-            box-shadow: var(--shadow);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .contact-info { background: var(--primary); color: var(--white); padding: 50px; flex: 1; }
-        .contact-form { padding: 50px; flex: 1.5; }
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
-        .form-group input, .form-group textarea {
-            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; background: var(--light);
-        }
-
-        /* --- FOOTER --- */
-        footer { background: var(--dark); color: #aaa; padding: 60px 0 20px; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; }
-        .footer-col h4 { color: var(--white); margin-bottom: 20px; }
-        .footer-col ul li { margin-bottom: 10px; }
-        .footer-col ul li a:hover { color: var(--accent); }
-        .copyright { text-align: center; border-top: 1px solid #333; padding-top: 20px; }
-
-        /* --- MOBILE RESPONSIVENESS (UPDATED) --- */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block; /* Show hamburger icon */
-            }
-
-            .hamburger.active .bar:nth-child(2) { opacity: 0; }
-            .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-            .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-
-            .nav-links {
-                position: fixed;
-                left: -100%;
-                top: 80px; /* Below header */
-                gap: 0;
-                flex-direction: column;
-                background-color: var(--white);
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-                padding: 20px 0;
-            }
-
-            .nav-links.active {
-                left: 0; /* Slide in */
-            }
-
-            .nav-links li {
-                margin: 16px 0;
-            }
-
-            .cta-header {
-                display: inline-block; /* Fix button layout on mobile */
-            }
-
-            /* Adjust Hero Text for Mobile */
-            .hero-content h1 { font-size: 2.2rem; }
-            .hero-content p { font-size: 1rem; padding: 0 10px; }
-            
-            /* Stack grids */
-            .about-grid { grid-template-columns: 1fr; }
-            .stats-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-            .contact-container { flex-direction: column; }
-        }
-    </style>
-</head>
-<body>
-
+    <body>
     <header>
         <div class="container">
             <nav>
@@ -393,6 +63,14 @@ HTML;
             </nav>
         </div>
     </header>
+HTML;
+       }
+
+        public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL){
+            $site_name_uc = strtoupper($site_name);    
+            $site_menu = Index_Segments::site_menu();
+       
+            echo <<<HTML
 
     <section class="hero">
         <div class="container hero-content">
@@ -513,10 +191,10 @@ HTML;
                     <p style="margin-bottom: 10px;"><strong>📍 Address:</strong><br>House BO6, Lenzo Pacific, Pyakassa, Airport Road, Abuja, FCT, Nigeria.</p>
                     <p style="margin-bottom: 10px;"><strong>✉️ Email:</strong><br><a href="mailto:admin@merlpro360.com">admin@merlpro360.com</a></p>
                     <p style="margin-bottom: 10px;"><strong>Social Media:</strong><br></p>
-                    <p><a href=""><i class="la la-instagram"></i> @merlpro360</a></p>
+                    <p><a href="https://www.instagram.com/merlpro360"><i class="la la-instagram"></i> @merlpro360</a></p>
                     <p><a href=""><i class="la la-facebook"></i> @merlpro360</a></p>
-                    <p><a href=""><i class="fa-brands fa-x-twitter"></i> @merlpro360</a></p>
-                    <p><a href=""><i class="fab fa-tiktok"></i> @merlpro360</a></p>
+                    <p><a href="https://x.com/merlpro360"><i class="fa-brands fa-x-twitter"></i> @merlpro360</a></p>
+                    <p><a href="https://www.tiktok.com/@merlpro360"><i class="fab fa-tiktok"></i> @merlpro360</a></p>
                 </div>
                 <div class="contact-form">
                     <form method="post" action="/#contact">
@@ -543,7 +221,15 @@ HTML;
             </div>
         </div>
     </section>
-
+HTML;
+       }
+                                                            
+                                                                
+                                                                
+        public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL){ 
+                                                                     
+        echo <<<HTML
+        
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -571,10 +257,10 @@ HTML;
                 <div class="footer-col">
                     <h4>Social Media Pages</h4>
                     <ul>
-                        <li><a href=""><i class="la la-instagram"></i> @merlpro360</a></li>
+                        <li><a href="https://www.instagram.com/merlpro360"><i class="la la-instagram"></i> @merlpro360</a></li>
                         <li><a href=""><i class="la la-facebook"></i> @merlpro360</a></li>
-                        <li><a href=""><i class="fa-brands fa-x-twitter"></i> @merlpro360</a></li>
-                        <li><a href=""><i class="fab fa-tiktok"></i> @merlpro360</a></li>
+                        <li><a href="https://x.com/merlpro360"><i class="fa-brands fa-x-twitter"></i> @merlpro360</a></li>
+                        <li><a href="https://www.tiktok.com/@merlpro360"><i class="fab fa-tiktok"></i> @merlpro360</a></li>
                     </ul>
                 </div>
             </div>
@@ -610,23 +296,6 @@ HTML;
     </script>
 </body>
 </html>
-HTML;
-       }
-                                                                
-       public static function index_scripts(){
-        echo <<<HTML
-
-                                                                
-HTML;
-        }
-                                                                
-                                                                
-        public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $additional_scripts = "", $whatsapp_chat = "on", $shopping_cart = "on"){ 
-                                                                            
-            $index_scripts = Index_Segments::index_scripts();    
-                                                                     
-        echo <<<HTML
-        
 HTML;
     }
 }
