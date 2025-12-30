@@ -126,7 +126,7 @@ Index_Segments::header();
     <div class="container">
         <h2 style="margin-bottom: 20px;">Ready to professionalize your impact?</h2>
         <p style="margin-bottom: 30px; opacity: 0.9;">Join the 150+ NGOs who trust MERL PRO 360 with their data strategy.</p>
-        <a href="index.html#contact" class="btn" style="background: var(--accent); color: var(--white);">Contact Us Today</a>
+        <a href="/#contact" class="btn" style="background: var(--accent); color: var(--white);">Contact Us Today</a>
     </div>
 </section>
 
