@@ -90,7 +90,7 @@ Index_Segments::header();
         <div class="team-grid">
             <div class="team-card">
                 <div class="team-img">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80" alt="CEO">
+                    <img src="/static/images/user_icon.png" alt="CEO">
                 </div>
                 <div class="team-info">
                     <h4>Dr. Adebayo Johnson</h4>
@@ -100,7 +100,7 @@ Index_Segments::header();
             </div>
             <div class="team-card">
                 <div class="team-img">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Head of Ops">
+                    <img src="/static/images/user_icon.png" alt="Head of Ops">
                 </div>
                 <div class="team-info">
                     <h4>Sarah Williams</h4>
@@ -110,7 +110,7 @@ Index_Segments::header();
             </div>
             <div class="team-card">
                 <div class="team-img">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=500&q=80" alt="Data Analyst">
+                    <img src="/static/images/user_icon.png" alt="Data Analyst">
                 </div>
                 <div class="team-info">
                     <h4>Emmanuel Okon</h4>
