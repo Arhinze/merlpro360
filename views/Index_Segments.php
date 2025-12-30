@@ -195,7 +195,7 @@ HTML;
                     <p><a href="https://x.com/merlpro360"><i class="fa-brands fa-x-twitter"></i> @merlpro360</a></p>
                     <p><a href="https://www.tiktok.com/@merlpro360"><i class="fab fa-tiktok"></i> @merlpro360</a></p>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form"> 
                     <form method="post" action="/#contact">
                         <div class="form-group">
                             <label>Full Name</label>
