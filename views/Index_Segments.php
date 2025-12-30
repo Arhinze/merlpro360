@@ -191,7 +191,7 @@ HTML;
                     <p style="margin-bottom: 10px;"><strong>✉️ Email:</strong><br><a href="mailto:admin@merlpro360.com">admin@merlpro360.com</a></p>
                     <p style="margin-bottom: 10px;"><strong>Social Media:</strong><br></p>
                     <p><a href="https://www.instagram.com/merlpro360"><i class="la la-instagram"></i> @merlpro360</a></p>
-                    <p><a href=""><i class="la la-facebook"></i> @merlpro360</a></p>
+                    <p><a href="https://web.facebook.com/profile.php?id=61585556622826"><i class="la la-facebook"></i> @merlpro360</a></p>
                     <p><a href="https://x.com/merlpro360"><i class="fa-brands fa-x-twitter"></i> @merlpro360</a></p>
                     <p><a href="https://www.tiktok.com/@merlpro360"><i class="fab fa-tiktok"></i> @merlpro360</a></p>
                 </div>
@@ -257,7 +257,7 @@ HTML;
                     <h4>Social Media Pages</h4>
                     <ul>
                         <li><a href="https://www.instagram.com/merlpro360"><i class="la la-instagram"></i> @merlpro360</a></li>
-                        <li><a href=""><i class="la la-facebook"></i> @merlpro360</a></li>
+                        <li><a href="https://web.facebook.com/profile.php?id=61585556622826"><i class="la la-facebook"></i> @merlpro360</a></li>
                         <li><a href="https://x.com/merlpro360"><i class="fa-brands fa-x-twitter"></i> @merlpro360</a></li>
                         <li><a href="https://www.tiktok.com/@merlpro360"><i class="fab fa-tiktok"></i> @merlpro360</a></li>
                     </ul>
