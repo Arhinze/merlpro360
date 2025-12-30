@@ -67,8 +67,7 @@ HTML;
        }
 
         public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL){
-            $site_name_uc = strtoupper($site_name);    
-            $site_menu = Index_Segments::site_menu();
+            $site_name_uc = strtoupper($site_name);  
        
             echo <<<HTML
 
