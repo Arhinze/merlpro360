@@ -95,7 +95,7 @@ HTML;
                         <li style="margin-bottom: 10px;">✓ <strong>Data-Driven</strong> Monitoring & Evaluation</li>
                         <li style="margin-bottom: 10px;">✓ <strong>Sustainable</strong> Fundraising Models</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary" style="background: transparent; color: var(--primary); border: 2px solid var(--primary);">More About Us</a>
+                    <a href="/about" class="btn btn-primary" style="background: transparent; color: var(--primary); border: 2px solid var(--primary);">More About Us</a>
                 </div>
             </div>
         </div>
