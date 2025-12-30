@@ -93,7 +93,7 @@ Index_Segments::header();
                     <img src="/static/images/user_icon.png" alt="CEO">
                 </div>
                 <div class="team-info">
-                    <h4>Dr. Adebayo Johnson</h4>
+                    <h4>Dr. John Doe</h4>
                     <span>Lead Consultant / Founder</span>
                     <p>PhD in Development Economics with 15 years experience in USAID and UN projects.</p>
                 </div>
@@ -103,7 +103,7 @@ Index_Segments::header();
                     <img src="/static/images/user_icon.png" alt="Head of Ops">
                 </div>
                 <div class="team-info">
-                    <h4>Sarah Williams</h4>
+                    <h4>Jane Doe</h4>
                     <span>Head of Research</span>
                     <p>Expert in qualitative research and community-led data collection methods.</p>
                 </div>
@@ -113,7 +113,7 @@ Index_Segments::header();
                     <img src="/static/images/user_icon.png" alt="Data Analyst">
                 </div>
                 <div class="team-info">
-                    <h4>Emmanuel Okon</h4>
+                    <h4>John Doe</h4>
                     <span>Senior Data Analyst</span>
                     <p>Specialist in ODK, PowerBI, and GIS mapping for complex field environments.</p>
                 </div>
