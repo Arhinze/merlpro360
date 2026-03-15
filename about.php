@@ -100,22 +100,12 @@ Index_Segments::header();
             </div>
             <div class="team-card">
                 <div class="team-img">
-                    <img src="/static/images/user_icon.png" alt="Head of Ops">
+                    <img src="/static/images/francis_arinze.png" alt="Head of Ops">
                 </div>
                 <div class="team-info">
                     <h4>Francis Arinze</h4>
                     <span>Head of Research</span>
                     <p>Expert in qualitative research and community-led data collection methods.</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="/static/images/user_icon.png" alt="Head of Ops">
-                </div>
-                <div class="team-info">
-                    <h4>Mercy Ezinne</h4>
-                    <span>MERL Specialist</span>
-                    <p>Specialist in Monitoring, continuous Evaluation, Research with focus on modern Research methodologies and evidence based Learning.</p>
                 </div>
             </div>
             <div class="team-card">
@@ -130,7 +120,17 @@ Index_Segments::header();
             </div>
             <div class="team-card">
                 <div class="team-img">
-                    <img src="/static/images/user_icon.png" alt="Data Analyst">
+                    <img src="/static/images/user_icon.png" alt="Head of Ops">
+                </div>
+                <div class="team-info">
+                    <h4>Mercy Ezinne</h4>
+                    <span>MERL Specialist</span>
+                    <p>Specialist in Monitoring, continuous Evaluation, Research with focus on modern Research methodologies and evidence based Learning.</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-img">
+                    <img src="/static/images/ebuka_emmanuel.png" alt="Data Analyst">
                 </div>
                 <div class="team-info">
                     <h4>Ebuka Emmanuel</h4>
